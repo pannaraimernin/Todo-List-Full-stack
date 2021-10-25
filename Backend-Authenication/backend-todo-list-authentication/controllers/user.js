@@ -28,6 +28,7 @@ const targetUser = await db.User.findOne({where : {username : username}});
 const loginUser = async (req,res)=>{
     const {username,password} = req.body;
     const targetUser = await db.User.findOne({where : {username : username}});
+    
     if(!targetUser){
         res.status(400).send({message: " Username pr password is wrong"})
     }else{

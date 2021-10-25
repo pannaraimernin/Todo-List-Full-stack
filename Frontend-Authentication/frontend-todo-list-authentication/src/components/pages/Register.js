@@ -27,7 +27,7 @@ const layout = {
             message: `${values.nickname} register is successful`,
                
               });
-              props.history.push("/login") // ต้อวใช้ withRouter ช่วย
+              props.history.push("/login") //  withRouter help
 
         })
         .catch(err =>{
@@ -93,7 +93,7 @@ const layout = {
                             name="confirm"
                             label="Confirm Password"
                             hasFeedback
-                            dependencies = {["password"]} // หมายถึง ถ้าเจอ name = "password"ให้เช็ค rule ด้านล่างอีกครั้งนึง
+                            dependencies = {["password"]} // mean if find name ="password" go check next rule again
                             rules={[
                                 {
                                     required: true,

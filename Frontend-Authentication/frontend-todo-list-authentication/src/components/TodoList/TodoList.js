@@ -37,7 +37,7 @@ export default function TodoList() {
                     <Link to = "/profile "><Button> Go to profile</Button></Link>
                 </Row>
                 <Row>
-                    <Text type="primary">กรุณาใส่ Todo ที่ต้องการเพิ่ม</Text>
+                    <Text type="primary">Please enter Todo list</Text>
                 </Row>
                 <Row justify="center">
                     <Col span={20}>

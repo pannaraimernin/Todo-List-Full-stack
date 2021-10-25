@@ -20,7 +20,7 @@ export default function Todo(props) {
     let contents = (
         <Row style={{ width: '100%' }}>
             <Col span={20}>
-                <Input value={changeInput} onChange={(e) => setChangeInput(e.target.value)} />
+                <Input value={changeInput} onChange={(e) => setChangeInput(e.target.value)}/>
             </Col>
             <Col span={4}>
                 <Button type="primary" onClick={() => updateTodoItem(props.todo.id)}>Done</Button>
